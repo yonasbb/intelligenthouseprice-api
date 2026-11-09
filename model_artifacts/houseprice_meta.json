@@ -1,0 +1,111 @@
+{
+  "project": "Group 8 - FUSE AI-201 Module 5",
+  "features": [
+    "OverallQual",
+    "GrLivArea",
+    "TotalBsmtSF",
+    "GarageCars",
+    "YearBuilt",
+    "FullBath",
+    "LotArea",
+    "OverallCond",
+    "Neighborhood",
+    "KitchenQual"
+  ],
+  "target": "SalePrice (USD)",
+  "target_transform": "natural log during training; exp during prediction",
+  "training_rows": 1168,
+  "test_rows": 292,
+  "evaluation": {
+    "selected_model": "Gradient boosting",
+    "CV_log_RMSE": 0.14169255932517116,
+    "train_log_RMSE": 0.12050846766421816,
+    "test_log_RMSE": 0.14781441498359316,
+    "MAE_USD": 18852.867342339185,
+    "RMSE_USD": 33407.17175119232,
+    "R2": 0.8544991315535017,
+    "within_10_percent": 0.6404109589041096,
+    "CV_improvement_over_linear": 0.06434926366174265
+  },
+  "defaults": {
+    "OverallQual": 6,
+    "GrLivArea": 1473,
+    "TotalBsmtSF": 997,
+    "GarageCars": 2,
+    "YearBuilt": 1972,
+    "FullBath": 2,
+    "LotArea": 9600,
+    "OverallCond": 5,
+    "Neighborhood": "NAmes",
+    "KitchenQual": "TA"
+  },
+  "categories": {
+    "Neighborhood": [
+      "Blmngtn",
+      "Blueste",
+      "BrDale",
+      "BrkSide",
+      "ClearCr",
+      "CollgCr",
+      "Crawfor",
+      "Edwards",
+      "Gilbert",
+      "IDOTRR",
+      "MeadowV",
+      "Mitchel",
+      "NAmes",
+      "NPkVill",
+      "NWAmes",
+      "NoRidge",
+      "NridgHt",
+      "OldTown",
+      "SWISU",
+      "Sawyer",
+      "SawyerW",
+      "Somerst",
+      "StoneBr",
+      "Timber",
+      "Veenker"
+    ],
+    "KitchenQual": [
+      "Ex",
+      "Fa",
+      "Gd",
+      "TA"
+    ]
+  },
+  "ranges": {
+    "OverallQual": [
+      1.0,
+      10.0
+    ],
+    "GrLivArea": [
+      334.0,
+      5642.0
+    ],
+    "TotalBsmtSF": [
+      0.0,
+      6110.0
+    ],
+    "GarageCars": [
+      0.0,
+      4.0
+    ],
+    "YearBuilt": [
+      1872.0,
+      2010.0
+    ],
+    "FullBath": [
+      0.0,
+      3.0
+    ],
+    "LotArea": [
+      1300.0,
+      215245.0
+    ],
+    "OverallCond": [
+      1.0,
+      9.0
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+**
+!Dockerfile
+!requirements.txt
+!start.py
+!houseprice_score.py
+!app/
+!app/*.py
+!model_artifacts/
+!model_artifacts/*.joblib
+!model_artifacts/*.json
